@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node -r dotenv/config  ./dist/index.js dotenv_config_path=./development.env",
-    "start-server": "node ./dist/index.js",
+    "start:dev": "tsc && node -r dotenv/config  ./dist/index.js dotenv_config_path=./development.env",
+    "start": "node ./dist/index.js",
     "build": "tsc"
   },
   "author": "",
