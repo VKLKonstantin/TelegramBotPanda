@@ -1,0 +1,30 @@
+{
+    "pandas": [
+        {
+            "id": "1",
+            "description": "Если что-то не нравится, попробуй взглянуть на это с другого ракурса",
+            "picture": "https://pbs.twimg.com/media/FbztsapWIAMqyBS?format=jpg&name=medium"
+        },
+        {
+            "id": "2",
+            "description": "Не стоит постоянно спешить: многое не сделано, но еще больше предстоит не сделать",
+            "picture": "http://www.asfera.info/files/1hq_wallpapers_ru_animals_6776_800x600.jpg"
+        },
+        {
+            "id": "3",
+            "description": "Если замечать только хорошее, плохое обидется и уйдет",
+            "picture": "https://zhenskie-sovety.ru/wp-content/uploads/2018/05/88ea7d7f1304547e9d41819aa0e16db4.jpg"
+        },
+        {
+            "id": "4",
+            "description": "Если попа не орех, значит расслабляться грех",
+            "picture": "https://avatars.mds.yandex.net/i?id=2f2f6874031e07fcd2205289813671b7-5876305-images-thumbs&n=13"
+        },
+        {
+            "id": "5",
+            "description": "Откладывать дела надо на потом, а потом нафиг",
+            "picture": "https://i.pinimg.com/736x/b4/15/26/b41526e951199639597d2837e3daf2e7.jpg"
+        }
+
+    ]
+}
