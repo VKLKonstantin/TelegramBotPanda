@@ -1,10 +1,19 @@
 import mongoose from "mongoose";
 import TelegramBot, { Message } from "node-telegram-bot-api";
-import { MONGO_PASSWORD, TELEGRAM_TOKEN } from "./config";
+import { MONGO_PASSWORD, PORT, TELEGRAM_TOKEN } from "./config";
 import { getAllPandas } from "./models/panda_wisdom_model";
 import { getWeather } from "./weather";
+import express from 'express';
 
 const UrlDB = `mongodb+srv://admin:${MONGO_PASSWORD}@cluster0.pfmktyu.mongodb.net/?retryWrites=true&w=majority`
+
+const app = express();
+
+app.get('/', (request, response) => {
+    response.send('App is running');
+}).listen(PORT, () => {
+    console.log(`App is running, server is listening on port${PORT}`);
+});
 
 async function start(UrlDB: string) {
     try {
