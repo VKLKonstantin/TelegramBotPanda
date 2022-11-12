@@ -87,10 +87,18 @@ bot.on('message', async (msg: Message) => {
                 id,
                 wisdom,
             )
-            bot.sendPhoto(
-                id,
-                pandasList[pandaVariant].picture,
-            )
+            if (pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length-3, pandasList[pandaVariant].picture.length-1) === 'gif') {
+                bot.sendAnimation(
+                    id,
+                    pandasList[pandaVariant].picture,
+                )
+            }
+            else {
+                bot.sendPhoto(
+                    id,
+                    pandasList[pandaVariant].picture,
+                )
+            }
             break;
         case 'Хочу прогноз погоды от Пандыча':
             bot.sendMessage(
