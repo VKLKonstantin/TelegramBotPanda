@@ -87,13 +87,17 @@ bot.on('message', async (msg: Message) => {
                 id,
                 wisdom,
             )
-            console.log('gif', pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length))
-            if (pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length - 1) === 'gif') {
+
+            const checkGif = pandasList[pandaVariant].picture.match(/gif/);
+            console.log('checkGif', pandasList[pandaVariant].picture.match(/gif/))
+            
+            if (checkGif) {
+                console.log('sendAnimation1')
                 bot.sendAnimation(
                     id,
                     pandasList[pandaVariant].picture,
                 )
-                console.log('sendAnimation')
+                console.log('sendAnimation2')
             }
             else {
                 bot.sendPhoto(
