@@ -87,11 +87,13 @@ bot.on('message', async (msg: Message) => {
                 id,
                 wisdom,
             )
-            if (pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length-3, pandasList[pandaVariant].picture.length-1) === 'gif') {
+            console.log('gif', pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length - 1))
+            if (pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length - 1) === 'gif') {
                 bot.sendAnimation(
                     id,
                     pandasList[pandaVariant].picture,
                 )
+                console.log('sendAnimation')
             }
             else {
                 bot.sendPhoto(
