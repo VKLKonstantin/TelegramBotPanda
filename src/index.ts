@@ -87,7 +87,7 @@ bot.on('message', async (msg: Message) => {
                 id,
                 wisdom,
             )
-            console.log('gif', pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length - 1))
+            console.log('gif', pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length))
             if (pandasList[pandaVariant].picture.slice(pandasList[pandaVariant].picture.length - 3, pandasList[pandaVariant].picture.length - 1) === 'gif') {
                 bot.sendAnimation(
                     id,
