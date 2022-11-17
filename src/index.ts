@@ -4,6 +4,7 @@ import { MONGO_PASSWORD, PORT, TELEGRAM_TOKEN } from "./config";
 import { getAllPandas } from "./models/panda_wisdom_model";
 import { getWeather } from "./weather";
 import express from 'express';
+import { createCollection } from "./models/added_collection_db";
 
 const UrlDB = `mongodb+srv://admin:${MONGO_PASSWORD}@cluster0.pfmktyu.mongodb.net/?retryWrites=true&w=majority`
 
@@ -75,7 +76,8 @@ bot.on('message', async (msg: Message) => {
                     keyboard: [
                         [{ text: 'Хочу мудрость от Пандыча' }],
                         [{ text: 'Хочу прогноз погоды от Пандыча' }],
-                    ]
+                    ],
+                    resize_keyboard: true
                 }
             }
         )
@@ -90,7 +92,7 @@ bot.on('message', async (msg: Message) => {
 
             const checkGif = pandasList[pandaVariant].picture.match(/gif/);
             console.log('checkGif', pandasList[pandaVariant].picture.match(/gif/))
-            
+
             if (checkGif) {
                 console.log('sendAnimation1')
                 bot.sendAnimation(
