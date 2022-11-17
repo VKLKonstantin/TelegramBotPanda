@@ -4,7 +4,7 @@ import { MONGO_PASSWORD, PORT, TELEGRAM_TOKEN } from "./config";
 import { getAllPandas } from "./models/panda_wisdom_model";
 import { getWeather } from "./weather";
 import express from 'express';
-import { createCollection } from "./models/added_collection_db";
+import { Greetings } from "./greetings";
 
 const UrlDB = `mongodb+srv://admin:${MONGO_PASSWORD}@cluster0.pfmktyu.mongodb.net/?retryWrites=true&w=majority`
 
@@ -61,41 +61,13 @@ bot.on('message', async (msg: Message) => {
     const { id } = msg.chat;
     console.log('msg', msg)
     // @ts-ignore
-    if (msg && msg.text.toLocaleLowerCase() !== 'привет'
+    if (!Greetings.includes(msg!.text.toLocaleLowerCase())
         && msg!.text !== 'Хочу мудрость от Пандыча'
         && msg!.text !== 'Хочу прогноз погоды от Пандыча') {
         bot.sendMessage(id, 'Привет, меня зовут Пандыч, поприветствуй меня')
     }
     // @ts-ignore
-    if (msg!.text.toLocaleLowerCase() === 'привет'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'привет!'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'приветуля'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'приветуля!'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'здравствуй'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'здравствуй!'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'hello'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'hello!'||
-     // @ts-ignore
-      // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'hey'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'hey!'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'салют'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'салют!'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'здравствуйте'||
-     // @ts-ignore
-    msg!.text.toLocaleLowerCase() === 'здравствуйте!'
-    ) {
+    if (Greetings.includes(msg!.text.toLocaleLowerCase())) {
         bot.sendMessage(
             id,
             'Свой выбор сделай ты...',
