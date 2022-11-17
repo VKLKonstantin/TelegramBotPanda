@@ -67,10 +67,38 @@ bot.on('message', async (msg: Message) => {
         bot.sendMessage(id, 'Привет, меня зовут Пандыч, поприветствуй меня')
     }
     // @ts-ignore
-    if (msg!.text.toLocaleLowerCase() === 'привет') {
+    if (msg!.text.toLocaleLowerCase() === 'привет'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'привет!'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'приветуля'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'приветуля!'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'здравствуй'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'здравствуй!'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'hello'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'hello!'||
+     // @ts-ignore
+      // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'hey'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'hey!'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'салют'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'салют!'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'здравствуйте'||
+     // @ts-ignore
+    msg!.text.toLocaleLowerCase() === 'здравствуйте!'
+    ) {
         bot.sendMessage(
             id,
-            'Выбирай',
+            'Свой выбор сделай ты...',
             {
                 reply_markup: {
                     keyboard: [
