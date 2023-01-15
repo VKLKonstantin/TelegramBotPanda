@@ -29,6 +29,70 @@
             "id": "6",
             "description": "Иногда нужно просто расслабиться и пожевать бамбук",
             "picture": "https://zooblog.ru/wp-content/uploads/2021/01/giphyca2jvbqu.gif"
+        },
+        {
+            "id": "7",
+            "description": "Встану завтра пораньше, пообедаю и все доделаю",
+            "picture": "https://cameralabs.org/media/lab15/may/07-2/57_28517d93ee89e3445580f872101fb6b0.jpg"
+        },
+        {
+            "id": "8",
+            "description": "Еще пять минуточек и я выхожу",
+            "picture": "https://cdn.ananasposter.ru/image/cache/catalog/poster/travel/90/4223-1000x830.jpg"
+        },
+        {
+            "id": "9",
+            "description": "Худею на трех диетах, одной не наедаюсь",
+            "picture": "https://i.gifer.com/QvzU.gif"
+        },
+
+        {
+            "id": "10",
+            "description": "Экономлю время на утренний сон: завтракаю на ночь",
+            "picture": "https://xcraft.ru/uploads/bc/thumb-532588.jpg?date=1606057280"
+        },
+
+        {
+            "id": "11",
+            "description": "Не ленивый, а заранее отдыхающий",
+            "picture": "https://u-stena.ru/upload/iblock/52e/52e9b11ceed0cecf6828ea3f5e55ea4d.jpg"
+        },
+        {
+            "id": "12",
+            "description": "Вот за что я люблю себя, так это за все",
+            "picture": "https://i.gifer.com/YCAN.gif"
+        },
+        {
+            "id": "13",
+            "description": "У меня нет лишнего веса, есть запасной",
+            "picture": "https://cameralabs.org/media/lab15/may/07-2/57_5299520ac3693f9dbb555daaeb385356.jpg"
+        },
+
+        {
+            "id": "14",
+            "description": "Не могу противостоять проблемам. Противолежу",
+            "picture": "https://3.bp.blogspot.com/-JNO0LpxXbig/WcYW8B9cMzI/AAAAAAAAACE/Robraw1csSQQYbGnoBUDJfZ4AJ0P-ToQQCLcBGAs/s320/maxresdefault.jpg"
+        },
+        {
+            "id": "15",
+            "description": "Я выбираю спорт. Особенно нравится фигурное лежание",
+            "picture": "https://i.pinimg.com/236x/b3/9f/89/b39f893d180fe8a26635995473b44b20.jpg"
+        },
+        {
+            "id": "16",
+            "description": "Засыпаю как убитый. Просыпаюсь таким же",
+            "picture": "https://cameralabs.org/media/lab15/may/07-2/57_51f6d54c11760105ea5df7e3728a5b72.jpg"
+        },
+        {
+            "id": "17",
+            "description": "Не знаю, чем я занят, но мне всегда некогда",
+            "picture": "https://cameralabs.org/media/lab15/may/07-2/57_9a4f37500c33543426a4570821d117aa.jpg"
+        },
+        {
+            "id": "18",
+            "description": "Все что не делается, я и не делаю",
+            "picture": "https://cameralabs.org/media/lab15/may/07-2/57_8b993d294cc50b97b76f06ad3d797467.jpg"
         }
+
     ]
 }
